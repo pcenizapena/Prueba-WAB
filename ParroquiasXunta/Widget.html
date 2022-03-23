@@ -1,0 +1,26 @@
+<div>
+    <h1>Buscar parroquias</h1>
+    <label>Provincias</label>
+    <select data-dojo-attach-point="selectProvincia"
+    data-dojo-attach-event="onchange:cargaConcellos"
+    style="display: block;">
+<option value="-1">Seleccione provincia</option>
+<option value="15">A Coruña</option>
+<option value="27">Lugo</option>
+<option value="32">Ourense</option>
+<option value="36">Pontevedra</option></select> <br>
+<div>
+<label>Concellos:</label>
+    <select style=display:block data-dojo-attach-point="listaConcellos" data-dojo-attach-event="onchange:cargaParroquias"></select>
+    <button
+    data-dojo-attach-event="onclick:zoomConcello"><img src="widgets/ParroquiasXunta/images/lupa.png" alt="Lupa" style="height:15px;">
+    </button>
+</div>
+
+<div>
+<label>Parroquias:</label>
+<select style="display: block;"
+data-dojo-attach-point="listaParroquias"></select>
+<button
+data-dojo-attach-event="onclick:zoomParroquia"><img src="widgets/ParroquiasXunta/images/lupa.png" alt="Lupa" style="height:15px;"></button>
+</div>
